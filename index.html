@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <title>FCC - Build a Survey Form</title>
+</head>
+
+<body>
+    <div class="container text-center">
+        <h1 id="title">Web Dev Survey Form</h1>
+    </div>
+    <div class="container rounded form-container">
+        <!-- TODO: make it responsively sized -->
+        <div class="text-center">
+            <p id="description">Tell us all about your Web Development Experience</p>
+            <p>
+                <i>Any section with an asterisk (*) is required.</i>
+            </p>
+        </div>
+        <form action="" id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="First and Last Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Example: email@doman.com" required>
+                <!-- TODO: email needs validation -->
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Age:</label>
+                <input type="number" id="number" placeholder="23" min="0" max="130">
+                <!-- TODO: needs number validation -->
+            </div>
+            <div class="form-group">
+                <label for="codeeditor">What Code Editor do you use?</label>
+                <select name="codeeditor" id="dropdown" class="form-control">
+                    <option value="1">VS Code</option>
+                    <option value="2">Atom</option>
+                    <option value="3">VIM</option>
+                    <option value="4">Notepad++</option>
+                    <option value="5">Other</option>
+                </select>
+            </div>
+
+            <p>Are you satisfied with web development?</p>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="satisfaction" value="1" id="satisfaction1">
+                <label for="satisfaction1" class="form-check-label">Yes</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="satisfaction" value="2" id="satisfaction2">
+                <label for="satisfaction2" class="form-check-label">No</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="satisfaction" value="3" id="satisfaction3">
+                <label for="satisfaction3" class="form-check-label">Sometimes</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="satisfaction" value="4" id="satisfaction4">
+                <label for="satisfaction4" class="form-check-label">Only on Fridays</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="satisfaction" value="5" id="satisfaction5">
+                <label for="satisfaction5" class="form-check-label">Only when I do it at night with a dark theme.</label>
+            </div>
+
+            <p>Do you work overtime?</p>
+            <div class="form-check">
+                <input type="radio" name="overtime" value="1" id="overtime1" class="form-check-input">
+                <label for="overtime1" class="form-check-label">Yes</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" name="overtime" value="2" id="overtime2" class="form-check-input">
+                <label for="overtime2" class="form-check-label">No, I never will</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" name="overtime" value="3" id="overtime3" class="form-check-input">
+                <label for="overtime3" class="form-check-label">Only in a pinch</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" name="overtime" value="4" id="overtime4" class="form-check-input">
+                <label for="overtime4" class="form-check-label">Only when asked</label>
+            </div>
+
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>

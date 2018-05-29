@@ -17,7 +17,6 @@
         <p id="description">Tell us all about your Web Development Experience</p>
     </div>
     <div class="container rounded form-container">
-        <!-- TODO: make it responsively sized -->
         <div class="text-center">
             <p>
                 <i>Any section with an asterisk (*) is required.</i>
@@ -26,26 +25,35 @@
         <form action="" id="survey-form">
             <div class="container">
                 <legend>Basic Info:</legend>
-            <div class="form-group row">
-                <div class="col-2"><label for="name" id="name-label">*Name:</label></div>
-                <div class="col-sm"><input type="text" class="form-control" id="name" placeholder="First and Last Name" required></div>
-            </div>
-            <div class="form-group row">
-                <div class="col-2"><label for="email" id="email-label">*Email:</label></div>
-                <div class="col-sm"><input type="email" class="form-control" id="email" placeholder="Example: email@doman.com" required></div>
-                <!-- TODO: email needs validation -->
-            </div>
-            <div class="form-group row">
-                <div class="col-2"><label for="number" id="number-label">Age:</label></div>
-                <div class="col-sm"><input type="number" id="number" placeholder="23" min="0" max="130"></div>
-                <!-- TODO: needs number validation -->
-            </div>
-        </div>
-        <div class="container">
-            <div class="form-group row">
-                <div class="col-5"><label for="codeeditor">What Code Editor do you use?</label></div>
-                <div class="col-sm">
-                    <select name="codeeditor" id="dropdown" class="form-control">
+                <!-- TODO: need form validation -->
+                <!-- can check here: https://getbootstrap.com/docs/4.0/components/forms/#validation -->
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="name-label">* Name</span>
+                    </div>
+                    <input type="text" class="form-control" id="name" placeholder="First and Last Name" required>
+                </div>
+
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="email-label">* Email</span>
+                    </div>
+                    <input type="email" class="form-control" id="email" placeholder="email@domain.com" required>
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="number-label">Age</span>
+                    </div>
+                    <input class="form-control" type="number" id="number" placeholder="23" min="0" max="130">
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Code Editor</span>
+                    </div>
+                    <select class="custom-select" name="codeeditor" id="dropdown" class="form-control">
                         <option value="1">VS Code</option>
                         <option value="2">Atom</option>
                         <option value="3">VIM</option>
@@ -53,93 +61,120 @@
                         <option value="5">Other</option>
                     </select>
                 </div>
-                
-                
-            </div>
-        </div>
-            <div class="container">
+
+
+                <div class="container">
                     <legend>Are you satisfied with web development?</legend>
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" name="satisfaction" value="1" id="satisfaction1">
-                    <div class="col-sm"><label for="satisfaction1" class="form-check-label">Yes</label></div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="satisfaction" value="1" id="satisfaction1">
+                        <div class="col-sm">
+                            <label for="satisfaction1" class="form-check-label">Yes</label>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="satisfaction" value="2" id="satisfaction2">
+                        <div class="col-sm">
+                            <label for="satisfaction2" class="form-check-label">No</label>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="satisfaction" value="3" id="satisfaction3">
+                        <div class="col-sm">
+                            <label for="satisfaction3" class="form-check-label">Sometimes</label>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="satisfaction" value="4" id="satisfaction4">
+                        <div class="col-sm">
+                            <label for="satisfaction4" class="form-check-label">Only on Fridays</label>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="satisfaction" value="5" id="satisfaction5">
+                        <div class="col-sm">
+                            <label for="satisfaction5" class="form-check-label">Only when I do it at night with a dark theme.</label>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" name="satisfaction" value="2" id="satisfaction2">
-                    <div class="col-sm"><label for="satisfaction2" class="form-check-label">No</label></div>
-                </div>
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" name="satisfaction" value="3" id="satisfaction3">
-                    <div class="col-sm"><label for="satisfaction3" class="form-check-label">Sometimes</label></div>
-                </div>
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" name="satisfaction" value="4" id="satisfaction4">
-                    <div class="col-sm"><label for="satisfaction4" class="form-check-label">Only on Fridays</label></div>
-                </div>
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" name="satisfaction" value="5" id="satisfaction5">
-                    <div class="col-sm"><label for="satisfaction5" class="form-check-label">Only when I do it at night with a dark theme.</label></div>
-                </div>
-            </div>
-            
 
-            <div class="container">
+
+                <div class="container">
                     <legend>Do you work overtime?</legend>
-                <div class="form-check">
-                    <input type="radio" name="overtime" value="1" id="overtime1" class="form-check-input">
-                    <div class="col-sm"><label for="overtime1" class="form-check-label">Yes</label></div>
+                    <div class="form-check">
+                        <input type="radio" name="overtime" value="1" id="overtime1" class="form-check-input">
+                        <div class="col-sm">
+                            <label for="overtime1" class="form-check-label">Yes</label>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="overtime" value="2" id="overtime2" class="form-check-input">
+                        <div class="col-sm">
+                            <label for="overtime2" class="form-check-label">No, I never will</label>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="overtime" value="3" id="overtime3" class="form-check-input">
+                        <div class="col-sm">
+                            <label for="overtime3" class="form-check-label">Only in a pinch</label>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="overtime" value="4" id="overtime4" class="form-check-input">
+                        <div class="col-sm">
+                            <label for="overtime4" class="form-check-label">Only when asked</label>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-check">
-                    <input type="radio" name="overtime" value="2" id="overtime2" class="form-check-input">
-                    <div class="col-sm"><label for="overtime2" class="form-check-label">No, I never will</label></div>
-                </div>
-                <div class="form-check">
-                    <input type="radio" name="overtime" value="3" id="overtime3" class="form-check-input">
-                    <div class="col-sm"><label for="overtime3" class="form-check-label">Only in a pinch</label></div>
-                </div>
-                <div class="form-check">
-                    <input type="radio" name="overtime" value="4" id="overtime4" class="form-check-input">
-                    <div class="col-sm"><label for="overtime4" class="form-check-label">Only when asked</label></div>
-                </div>
-            </div>
 
-        <div class="container">
-            <legend>Do you use any of the following libraries?</legend>
-            <i>Check all that apply.</i>
-            <div class="form-check">
-                <input type="checkbox" name="react" value="react" id="checkbox1" class="form-check-input">
-                <div class="col-sm"><label for="checkbox1" class="form-check-label">React</label></div>
-            </div>
-            <div class="form-check">
-                <input type="checkbox" name="vue" value="vue" id="checkbox2" class="form-check-input">
-                <div class="col-sm"><label for="checkbox2" class="form-check-label">Vue</label></div>
-            </div>
-            <div class="form-check">
-                <input type="checkbox" name="angular" value="angular" id="checkbox3" class="form-check-input">
-                <div class="col-sm"><label for="checkbox3" class="form-check-label">Angular</label></div>
-            </div>
-            <div class="form-check">
-                <input type="checkbox" name="jquery" value="jquery" id="checkbox4" class="form-check-input">
-                <div class="col-sm"><label for="checkbox4" class="form-check-label">jQuery</label></div>
-            </div>
-            <div class="form-check">
-                <input type="checkbox" name="bootstrap" value="bootstrap" id="checkbox5" class="form-check-input">
-                <div class="col-sm"><label for="checkbox5" class="form-check-label">Bootstrap</label></div>
-            </div>
-        </div>
+                <div class="container">
+                    <legend>Do you use any of the following libraries?</legend>
+                    <i>Check all that apply.</i>
+                    <div class="form-check">
+                        <input type="checkbox" name="react" value="react" id="checkbox1" class="form-check-input">
+                        <div class="col-sm">
+                            <label for="checkbox1" class="form-check-label">React</label>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="vue" value="vue" id="checkbox2" class="form-check-input">
+                        <div class="col-sm">
+                            <label for="checkbox2" class="form-check-label">Vue</label>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="angular" value="angular" id="checkbox3" class="form-check-input">
+                        <div class="col-sm">
+                            <label for="checkbox3" class="form-check-label">Angular</label>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="jquery" value="jquery" id="checkbox4" class="form-check-input">
+                        <div class="col-sm">
+                            <label for="checkbox4" class="form-check-label">jQuery</label>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="bootstrap" value="bootstrap" id="checkbox5" class="form-check-input">
+                        <div class="col-sm">
+                            <label for="checkbox5" class="form-check-label">Bootstrap</label>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="container">
-            <legend>Any additional comments?</legend>
-            <textarea name="comments" id="" cols="30" rows="5" class="form-control"></textarea>
-        </div>
-        <div class="container text-center mt-4">
-                <button class="btn btn-light" type="button" id="submit">Button</button>
-        </div>
+                <div class="container">
+                    <legend>Any additional comments?</legend>
+                    <textarea name="comments" id="" cols="30" rows="5" class="form-control"></textarea>
+                </div>
+                <div class="container text-center">
+                    <button class="btn btn-light mb-4 mt-4" type="button" id="submit" value="submit">Button</button>
+                </div>
         </form>
     </div>
+</div>
+<footer class="text-center">
+    Copyright 2018 Dan Cook
+</footer>
 
-
-
-    <!-- TODO: add a footer -->
 
 </body>
 

@@ -25,13 +25,13 @@
         </div>
         <form action="" id="survey-form">
             <div class="container">
+                <h5>Basic Info:</h5>
             <div class="form-group row">
-                <div class="col-2"><label for="name" id="name-label">Name:</label></div>
+                <div class="col-2"><label for="name" id="name-label">*Name:</label></div>
                 <div class="col-sm"><input type="text" class="form-control" id="name" placeholder="First and Last Name" required></div>
-                 
             </div>
             <div class="form-group row">
-                <div class="col-2"><label for="email" id="email-label">Email:</label></div>
+                <div class="col-2"><label for="email" id="email-label">*Email:</label></div>
                 <div class="col-sm"><input type="email" class="form-control" id="email" placeholder="Example: email@doman.com" required></div>
                 <!-- TODO: email needs validation -->
             </div>
@@ -41,57 +41,68 @@
                 <!-- TODO: needs number validation -->
             </div>
         </div>
-            <div class="form-group">
-                <label for="codeeditor">What Code Editor do you use?</label>
-                <select name="codeeditor" id="dropdown" class="form-control">
-                    <option value="1">VS Code</option>
-                    <option value="2">Atom</option>
-                    <option value="3">VIM</option>
-                    <option value="4">Notepad++</option>
-                    <option value="5">Other</option>
-                </select>
+        <div class="container">
+            <div class="form-group row">
+                <div class="col-5"><label for="codeeditor">What Code Editor do you use?</label></div>
+                <div class="col-sm">
+                    <select name="codeeditor" id="dropdown" class="form-control">
+                        <option value="1">VS Code</option>
+                        <option value="2">Atom</option>
+                        <option value="3">VIM</option>
+                        <option value="4">Notepad++</option>
+                        <option value="5">Other</option>
+                    </select>
+                </div>
+                
+                
+            </div>
+        </div>
+            <div class="container">
+                    <h5>Are you satisfied with web development?</h5>
+                <div class="form-check row">
+                    <div class="col-1"><input type="radio" class="form-check-input" name="satisfaction" value="1" id="satisfaction1"></div>
+                    <div class="col-sm"><label for="satisfaction1" class="form-check-label">Yes</label></div>
+                </div>
+                <div class="form-check row">
+                    <div class="col-1"><input type="radio" class="form-check-input" name="satisfaction" value="2" id="satisfaction2"></div>
+                    <div class="col-sm"><label for="satisfaction2" class="form-check-label">No</label></div>
+                </div>
+                <div class="form-check row">
+                    <div class="col-1"><input type="radio" class="form-check-input" name="satisfaction" value="3" id="satisfaction3"></div>
+                    <div class="col-sm"><label for="satisfaction3" class="form-check-label">Sometimes</label></div>
+                </div>
+                <div class="form-check row">
+                    <div class="col-1"><input type="radio" class="form-check-input" name="satisfaction" value="4" id="satisfaction4"></div>
+                    <div class="col-sm"><label for="satisfaction4" class="form-check-label">Only on Fridays</label></div>
+                </div>
+                <div class="form-check row">
+                    <div class="col-1"><input type="radio" class="form-check-input" name="satisfaction" value="5" id="satisfaction5"></div>
+                    <div class="col-sm"><label for="satisfaction5" class="form-check-label">Only when I do it at night with a dark theme.</label></div>
+                </div>
+            </div>
+            
+
+            <div class="container">
+                    <h5>Do you work overtime?</h5>
+                <div class="form-check row">
+                    <div class="col-1"><input type="radio" name="overtime" value="1" id="overtime1" class="form-check-input"></div>
+                    <div class="col-sm"><label for="overtime1" class="form-check-label">Yes</label></div>
+                </div>
+                <div class="form-check row">
+                    <div class="col-1"><input type="radio" name="overtime" value="2" id="overtime2" class="form-check-input"></div>
+                    <div class="col-sm"><label for="overtime2" class="form-check-label">No, I never will</label></div>
+                </div>
+                <div class="form-check row">
+                    <div class="col-1"><input type="radio" name="overtime" value="3" id="overtime3" class="form-check-input"></div>
+                    <div class="col-sm"><label for="overtime3" class="form-check-label">Only in a pinch</label></div>
+                </div>
+                <div class="form-check row">
+                    <div class="col-1"><input type="radio" name="overtime" value="4" id="overtime4" class="form-check-input"></div>
+                    <div class="col-sm"><label for="overtime4" class="form-check-label">Only when asked</label></div>
+                </div>
             </div>
 
-            <p>Are you satisfied with web development?</p>
-            <div class="form-check">
-                <input type="radio" class="form-check-input" name="satisfaction" value="1" id="satisfaction1">
-                <label for="satisfaction1" class="form-check-label">Yes</label>
-            </div>
-            <div class="form-check">
-                <input type="radio" class="form-check-input" name="satisfaction" value="2" id="satisfaction2">
-                <label for="satisfaction2" class="form-check-label">No</label>
-            </div>
-            <div class="form-check">
-                <input type="radio" class="form-check-input" name="satisfaction" value="3" id="satisfaction3">
-                <label for="satisfaction3" class="form-check-label">Sometimes</label>
-            </div>
-            <div class="form-check">
-                <input type="radio" class="form-check-input" name="satisfaction" value="4" id="satisfaction4">
-                <label for="satisfaction4" class="form-check-label">Only on Fridays</label>
-            </div>
-            <div class="form-check">
-                <input type="radio" class="form-check-input" name="satisfaction" value="5" id="satisfaction5">
-                <label for="satisfaction5" class="form-check-label">Only when I do it at night with a dark theme.</label>
-            </div>
-
-            <p>Do you work overtime?</p>
-            <div class="form-check">
-                <input type="radio" name="overtime" value="1" id="overtime1" class="form-check-input">
-                <label for="overtime1" class="form-check-label">Yes</label>
-            </div>
-            <div class="form-check">
-                <input type="radio" name="overtime" value="2" id="overtime2" class="form-check-input">
-                <label for="overtime2" class="form-check-label">No, I never will</label>
-            </div>
-            <div class="form-check">
-                <input type="radio" name="overtime" value="3" id="overtime3" class="form-check-input">
-                <label for="overtime3" class="form-check-label">Only in a pinch</label>
-            </div>
-            <div class="form-check">
-                <input type="radio" name="overtime" value="4" id="overtime4" class="form-check-input">
-                <label for="overtime4" class="form-check-label">Only when asked</label>
-            </div>
-
+            
 
 
         </form>

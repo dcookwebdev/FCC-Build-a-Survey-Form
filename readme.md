@@ -34,6 +34,6 @@ While it is possible to use Javascript, I will use only HTML and CSS. One goal h
 - [x] For the name, email, and number input fields, I can see placeholder text that gives me a description or instructions for each field.'
 - [x] Inside the form element, I can select an option from a dropdown that has corresponding id="dropdown".'
 - [x] Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute.
-- [ ] Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute. 
-- [ ] Inside the form element, I am presented with a <textarea> at the end for additional comments.'
+- [x] Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute. 
+- [ ] Inside the form element, I am presented with a `<textarea>` at the end for additional comments.'
 - [ ] Inside the form element, I am presented with a button with id="submit" to submit all my inputs.

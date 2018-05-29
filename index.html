@@ -25,7 +25,7 @@
         </div>
         <form action="" id="survey-form">
             <div class="container">
-                <h5>Basic Info:</h5>
+                <legend>Basic Info:</legend>
             <div class="form-group row">
                 <div class="col-2"><label for="name" id="name-label">*Name:</label></div>
                 <div class="col-sm"><input type="text" class="form-control" id="name" placeholder="First and Last Name" required></div>
@@ -58,7 +58,7 @@
             </div>
         </div>
             <div class="container">
-                    <h5>Are you satisfied with web development?</h5>
+                    <legend>Are you satisfied with web development?</legend>
                 <div class="form-check">
                     <input type="radio" class="form-check-input" name="satisfaction" value="1" id="satisfaction1">
                     <div class="col-sm"><label for="satisfaction1" class="form-check-label">Yes</label></div>
@@ -83,7 +83,7 @@
             
 
             <div class="container">
-                    <h5>Do you work overtime?</h5>
+                    <legend>Do you work overtime?</legend>
                 <div class="form-check">
                     <input type="radio" name="overtime" value="1" id="overtime1" class="form-check-input">
                     <div class="col-sm"><label for="overtime1" class="form-check-label">Yes</label></div>
@@ -103,33 +103,40 @@
             </div>
 
         <div class="container">
-            <h5>Do you use any of the following libraries?</h5>
+            <legend>Do you use any of the following libraries?</legend>
             <i>Check all that apply.</i>
             <div class="form-check">
-                <input type="checkbox" value="checkbox1" id="checkbox1" class="form-check-input">
+                <input type="checkbox" name="react" value="react" id="checkbox1" class="form-check-input">
                 <div class="col-sm"><label for="checkbox1" class="form-check-label">React</label></div>
             </div>
             <div class="form-check">
-                <input type="checkbox" value="checkbox2" id="checkbox2" class="form-check-input">
+                <input type="checkbox" name="vue" value="vue" id="checkbox2" class="form-check-input">
                 <div class="col-sm"><label for="checkbox2" class="form-check-label">Vue</label></div>
             </div>
             <div class="form-check">
-                <input type="checkbox" value="checkbox3" id="checkbox3" class="form-check-input">
+                <input type="checkbox" name="angular" value="angular" id="checkbox3" class="form-check-input">
                 <div class="col-sm"><label for="checkbox3" class="form-check-label">Angular</label></div>
             </div>
             <div class="form-check">
-                <input type="checkbox" value="checkbox4" id="checkbox4" class="form-check-input">
+                <input type="checkbox" name="jquery" value="jquery" id="checkbox4" class="form-check-input">
                 <div class="col-sm"><label for="checkbox4" class="form-check-label">jQuery</label></div>
             </div>
             <div class="form-check">
-                <input type="checkbox" value="checkbox5" id="checkbox5" class="form-check-input">
+                <input type="checkbox" name="bootstrap" value="bootstrap" id="checkbox5" class="form-check-input">
                 <div class="col-sm"><label for="checkbox5" class="form-check-label">Bootstrap</label></div>
             </div>
         </div>
 
-
+        <div class="container">
+            <legend>Any additional comments?</legend>
+            <textarea name="comments" id="" cols="30" rows="5" class="form-control"></textarea>
+        </div>
+        <div class="container text-center mt-4">
+                <button class="btn btn-light" type="button" id="submit">Button</button>
+        </div>
         </form>
     </div>
+
 
 
     <!-- TODO: add a footer -->

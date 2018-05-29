@@ -3,10 +3,13 @@ body {
     color: #F1FAEE;
 }
 
-#title {
+#title, #description {
     color: #457B9D;
+}
+
+.title-div {
     margin-top: 2em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 .form-container {

@@ -24,20 +24,23 @@
             </p>
         </div>
         <form action="" id="survey-form">
-            <div class="form-group">
-                <label for="name" id="name-label">Name:</label>
-                <input type="text" class="form-control" id="name" placeholder="First and Last Name" required>
+            <div class="container">
+            <div class="form-group row">
+                <div class="col-2"><label for="name" id="name-label">Name:</label></div>
+                <div class="col-sm"><input type="text" class="form-control" id="name" placeholder="First and Last Name" required></div>
+                 
             </div>
-            <div class="form-group">
-                <label for="email" id="email-label">Email:</label>
-                <input type="email" class="form-control" id="email" placeholder="Example: email@doman.com" required>
+            <div class="form-group row">
+                <div class="col-2"><label for="email" id="email-label">Email:</label></div>
+                <div class="col-sm"><input type="email" class="form-control" id="email" placeholder="Example: email@doman.com" required></div>
                 <!-- TODO: email needs validation -->
             </div>
-            <div class="form-group">
-                <label for="number" id="number-label">Age:</label>
-                <input type="number" id="number" placeholder="23" min="0" max="130">
+            <div class="form-group row">
+                <div class="col-2"><label for="number" id="number-label">Age:</label></div>
+                <div class="col-sm"><input type="number" id="number" placeholder="23" min="0" max="130"></div>
                 <!-- TODO: needs number validation -->
             </div>
+        </div>
             <div class="form-group">
                 <label for="codeeditor">What Code Editor do you use?</label>
                 <select name="codeeditor" id="dropdown" class="form-control">

@@ -11,6 +11,7 @@ body {
 
 .form-container {
     background-color: #1D3557;
+    max-width: 650px;
 }
 
 

@@ -27,3 +27,7 @@ footer {
     color: #457B9D;
 }
 
+
+input:invalid {
+    border: 1px solid red;
+}

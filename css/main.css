@@ -1,10 +1,10 @@
 body {
-    background-color: #F1FAEE; 
-    color: #F1FAEE;
+    background-color: #616163; 
+    color: #616163;
 }
 
 #title, #description {
-    color: #457B9D;
+    color: #87F6FF;
 }
 
 .title-div {
@@ -13,7 +13,7 @@ body {
 }
 
 .form-container {
-    background-color: #1D3557;
+    background-color: #DAF5FF;
     max-width: 650px;
 }
 
@@ -24,6 +24,6 @@ legend {
 footer {
     margin-top: 2em;
     margin-bottom: 2em;
-    color: #457B9D;
+    color: #87F6FF;
 }
 

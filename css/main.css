@@ -1,29 +1,29 @@
 body {
-    background-color: #616163; 
-    color: #616163;
+  background-color: #616163;
+  color: #616163;
 }
 
-#title, #description {
-    color: #87F6FF;
+#title,
+#description {
+  color: #87f6ff;
 }
 
 .title-div {
-    margin-top: 2em;
-    margin-bottom: 1em;
+  margin-top: 2em;
+  margin-bottom: 1em;
 }
 
 .form-container {
-    background-color: #DAF5FF;
-    max-width: 650px;
+  background-color: #daf5ff;
+  max-width: 650px;
 }
 
 legend {
-    margin-top: 1.5em;
+  margin-top: 1.5em;
 }
 
 footer {
-    margin-top: 2em;
-    margin-bottom: 2em;
-    color: #87F6FF;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  color: #87f6ff;
 }
-

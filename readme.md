@@ -8,6 +8,10 @@ While it is possible to use Javascript, I will use only HTML and CSS. One goal h
 
 ## Development Process:
 
+#### 2018-06-07
+- Continuing to build the page and finalize some of the outstanding issues.
+- Going to use HTML 5 validation and doing it with the pattern attribute and regex. `pattern="banana|cherry"`
+
 #### 2018-05-27
  - getting everything set up on github and my local repo
  - familiarizing myself with the challenge
